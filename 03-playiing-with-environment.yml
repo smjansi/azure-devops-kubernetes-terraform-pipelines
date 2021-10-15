@@ -10,7 +10,7 @@ strategy:
       operatingSystem:  'macos-latest'
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: $(operatingSystem)
 
 steps:
 - script: echo Running on $(operatingSystem)
